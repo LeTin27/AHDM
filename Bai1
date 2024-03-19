@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+// Hàm kiểm tra số có phải là bội của 7 hay không
+int isMultipleOfSeven(int number) {
+    return (number % 7 == 0);
+}
+
+int main() {
+    printf("Các số nguyên có 2 chữ số và là bội của 7:\n");
+
+    for (int i = 10; i <= 99; i++) {
+        if (isMultipleOfSeven(i)) {
+            printf("%d ", i);
+        }
+    }
+
+    printf("\n");
+
+    return 0;
+}
